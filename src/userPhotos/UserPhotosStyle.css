@@ -1,0 +1,99 @@
+.photos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 3vw;
+}
+
+
+.user-image{
+    border-radius: 10px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+img[type="chosen-image"]{
+    width: 50vw;
+    height: auto;
+    max-width: 50%;
+    max-height: 70vh;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+img[type="gallery-image"]{
+    width: 25vw;
+    cursor: pointer;
+}
+
+img[type="gallery-image"]:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    img[type="gallery-image"]{
+        width: 15vw;
+    }
+
+
+}
+
+
+.image-block-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-width: 600px;
+    height: auto;
+    background-color: rgba(180, 178, 178, 0.8);
+    z-index: 1000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+
+#close-photo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.photo-changer{
+    cursor: pointer;
+    font-size: clamp(10px, 10vw, 50px);
+}
+
+.photo-changer:hover{
+    color: white;
+}
+
+
+#download-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem; /* גודל מתאים למובייל */
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#download-icon:hover{
+    color: white;
+}

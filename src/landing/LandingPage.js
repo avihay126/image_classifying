@@ -11,7 +11,7 @@ function LandingPage(){
     return(
         <div className={"landing-page-container"}>
             <div className={"landing-header"}>
-                Fill out the details below to receive your photos
+                Fill out your details to receive your photos
             </div>
             <div className={"landing-input-container"}>
                 <LandingInput placeHolder={"Name"} inputValue={name} setValue={setName}/>

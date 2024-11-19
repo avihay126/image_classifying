@@ -69,6 +69,7 @@ button[font="landing-page-button-font"]{
     color: white;
     background: linear-gradient(135deg, #f39c12, #e67e22);
     border: 1px solid white;
+    cursor: pointer;
 }
 
 #selfie-image{
