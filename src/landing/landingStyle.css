@@ -1,0 +1,87 @@
+.landing-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom,#4e4376,  #3b6c8d);
+
+    gap: 10vh;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.landing-header{
+    font-style: italic;
+    font-size: 10vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    color: white;
+    max-width: 80vw;
+    text-align: center;
+    margin-top: 3vh;
+
+}
+
+@media (min-width: 800px) {
+    .landing-header{
+        font-size: 6vw;
+    }
+}
+
+
+
+.landing-input{
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    width: 60vw;
+    height: 6vh;
+    font-size: 6vw;
+    background-color:transparent;
+    font-family: "Berlin Sans FB";
+}
+
+.landing-input::placeholder {
+    color: white;
+    text-align: center;
+
+}
+@media (min-width: 769px) {
+    .landing-input{
+        width: 50vw;
+        height: 10vh;
+    }
+}
+
+.landing-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: fit-content;
+}
+
+
+
+button[font="landing-page-button-font"]{
+    border-radius: 7px;
+    font-family: Corbel;
+    font-weight: bold;
+    font-size: 6vw;
+    min-height: 8vh;
+    color: white;
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    border: 1px solid white;
+}
+
+#selfie-image{
+    max-width: 40%;
+    max-height: 20%;
+    border-radius: 20px;
+}
+
+.selfie-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin-bottom: 5vh;
+
+}
